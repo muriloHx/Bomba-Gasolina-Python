@@ -33,7 +33,7 @@ class BombaCombustivel:
     def quantidadeCombustivel(self, val: float):
         if not isinstance(val, (int,float)):
             raise TypeError()
-        if val > 0:
+        if val >= 0:
             self._quantidadeCombustivel = val
         else:
             raise ValueError("Digite um valor valido")
@@ -89,10 +89,10 @@ class BombaCombustivel:
 
 
 bomba = BombaCombustivel()
-bomba.valorLitro = 5
+bomba.valorLitro = 5.42
 bomba.tipoCombustivel = "gasolina"
 bomba.quantidadeCombustivel = 500
-bomba.abastecerPorLitro(250)
+bomba.abastecerPorLitro(500)
 #print(bomba)
 
 
