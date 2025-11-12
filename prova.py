@@ -78,7 +78,7 @@ class BombaCombustivel:
             print(f"Quantidade maxima disponivel no momento: {self.quantidadeCombustivel}")
             return False
         else:
-            valor = litros/self.valorLitro
+            valor = litros*self.valorLitro
             print(f"""  
                 Valor a ser pago:          {valor:.2f}
                 Quantidade de combustivel: {litros:.2f}
